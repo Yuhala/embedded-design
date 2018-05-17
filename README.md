@@ -12,16 +12,15 @@ To follow this tutorial you would need to install the Arduino IDE on your machin
 ## Important Components
 The different projects were carried out with the help of an Arduino development kit which comes with many components. However, some each project required some important additional components. We list these below:
 
-1- An Arduino Bluetooth module 
+- An Arduino Bluetooth module \
 
-![bluetooth-module]<img src="https://1abxf1rh6g01lhm2riyrt55k-wpengine.netdna-ssl.com/wp-content/uploads/make-images/T11ETWOOA4peEdBY.jpg" width="250">
-2- A Remote Control
+<img src="https://1abxf1rh6g01lhm2riyrt55k-wpengine.netdna-ssl.com/wp-content/uploads/make-images/T11ETWOOA4peEdBY.jpg" width="250">
+2- A Remote Control \
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWtYSiqOPK0aAa2Ha7-TJrHOSwPGSt-NP1sPLUHClQsWXkKZUwQ" width="250">
 
-![remote-control]<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWtYSiqOPK0aAa2Ha7-TJrHOSwPGSt-NP1sPLUHClQsWXkKZUwQ" width="250">
+3- A nodemcu esp8266 wifi module \
 
-3- A nodemcu esp8266 wifi module
-
-![nodemcu]<img src="http://www.microsolution.com.pk/wp-content/uploads/2017/12/Node-MCU.jpg" width="250">
+<img src="http://www.microsolution.com.pk/wp-content/uploads/2017/12/Node-MCU.jpg" width="250">
 
 ### Installing Docker
 First, add the GPG key for the official Docker repository to the system:
