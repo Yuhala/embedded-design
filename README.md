@@ -1,9 +1,9 @@
 # Arduino-Projects
 This repository contains a list of 3 arduino projects I did some time ago. All projects are concerned with controlling devices remotely using an Arduino microcontroller. 
 
-1-In the first project, we use the arduino to control a light bulb over BlueTooth.
-2-In the second project, we use the arduino to control the light bulb with a remote control.
-3-In the third project, we control the light bulb this time around over wifi using a laptop.
+1- In the first project, we use the arduino to control a light bulb over BlueTooth. \
+2- In the second project, we use the arduino to control the light bulb with a remote control. \
+3- In the third project, we control the light bulb this time around over wifi using a laptop. \
 
 ## Prerequisites
 
@@ -16,6 +16,7 @@ The different projects were carried out with the help of an Arduino development 
 
 <img src="https://1abxf1rh6g01lhm2riyrt55k-wpengine.netdna-ssl.com/wp-content/uploads/make-images/T11ETWOOA4peEdBY.jpg" width="250">
 - A Remote Control 
+
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWtYSiqOPK0aAa2Ha7-TJrHOSwPGSt-NP1sPLUHClQsWXkKZUwQ" width="250">
 
 - A nodemcu esp8266 wifi module 
@@ -35,18 +36,7 @@ Add the Docker repository to APT sources:
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 ```
-Update the package database with the Docker packages from the newly added repo:
 
-```
-sudo apt-get update
-
-```
-Install Docker
-
-```
-sudo apt-get install -y docker-ce
-
-```
 
 ### Tests
 
