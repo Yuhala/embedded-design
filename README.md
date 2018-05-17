@@ -13,12 +13,15 @@ To follow this tutorial you would need to install the Arduino IDE on your machin
 The different projects were carried out with the help of an Arduino development kit which comes with many components. However, some each project required some important additional components. We list these below:
 
 1-An Arduino Bluetooth module 
+
 ![bluetooth-module](https://1abxf1rh6g01lhm2riyrt55k-wpengine.netdna-ssl.com/wp-content/uploads/make-images/T11ETWOOA4peEdBY.jpg)
 2-A Remote Control
+
 ![remote-control](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWtYSiqOPK0aAa2Ha7-TJrHOSwPGSt-NP1sPLUHClQsWXkKZUwQ)
 
 3-A nodemcu esp8266 wifi module
-![bluetooth-module](http://www.microsolution.com.pk/wp-content/uploads/2017/12/Node-MCU.jpg)
+
+![bluetooth-module](http://www.microsolution.com.pk/product/nodemcu-lua-wifi-internet-esp8266-development-board-pakistan/)
 
 ### Installing Docker
 First, add the GPG key for the official Docker repository to the system:
