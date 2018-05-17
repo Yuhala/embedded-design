@@ -1,45 +1,45 @@
- /*Contrôle à distance via Bluetooth
+/*Controlling an LED via Bluetooth
  *Created by Peterson Yuhala
  * 4GI,ENSP Yaounde
-*/
+ */
 #include <SoftwareSerial.h>
- //const int relayPin =3; //Spécifie la broche signal du relai
- int serialValue;  //Contient la valeur reçu par le module Bluetooth
  
- const int txPin=10;
- const int rxPin=11;
- const int relayPin=7;
+ int serialValue;  //contains the value received by the Bluetooth module
+ 
+ const int txPin=10; //goes top bluetooth module TX pin
+ const int rxPin=11; //connect to bluetooth module RX pin
+ const int ledPin=7; //Connect your LED on this pin
 
- SoftwareSerial BT(txPin,rxPin); //Cree un objet bluetooth avec les pins de transmission et reception indiqués
+ SoftwareSerial BT(txPin,rxPin); //Creates a serial object with the given transmission TX and reception pins RX
 
 void setup() {
  
   
  //digitalWrite(relayPin,LOW);  
   
-  pinMode(relayPin,OUTPUT);
-  digitalWrite(relayPin,LOW); 
-  BT.begin(9600); //Specifie la vitesse de reception et transmission de l'information 
+  pinMode(ledPin,OUTPUT);
+  digitalWrite(ledPin,LOW); 
+  BT.begin(9600); //Transmission rate
  
 
 }
   
 void loop() {
   Serial.begin(9600);
-  if(BT.available()){ //Si il existe une information serial reçu, on le lit    
+  if(BT.available()){ //If there is serial information available, read it    
     serialValue=BT.read();
     Serial.println(serialValue); 
     
   }     
   switch (serialValue) {//UP:67 DOWN:68 LEFT:66 RIGHT:65 MID:69
       case 69:
-        digitalWrite(relayPin,HIGH);
+        digitalWrite(ledPin,HIGH);
         break;
       case 65:
-        digitalWrite(relayPin,LOW);
+        digitalWrite(ledPin,LOW);
         break;      
   }
  
-   delay(100);//This delay is very important! Do not remove;Helps return good serial values!!!
+   delay(100);//This delay is very important! Do not remove; Helps return good serial values!!!
     
 }
