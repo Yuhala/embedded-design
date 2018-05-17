@@ -12,16 +12,16 @@ To follow this tutorial you would need to install the Arduino IDE on your machin
 ## Important Components
 The different projects were carried out with the help of an Arduino development kit which comes with many components. However, some each project required some important additional components. We list these below:
 
-1-An Arduino Bluetooth module 
+1- An Arduino Bluetooth module 
 
 ![bluetooth-module]<img src="https://1abxf1rh6g01lhm2riyrt55k-wpengine.netdna-ssl.com/wp-content/uploads/make-images/T11ETWOOA4peEdBY.jpg" width="250">
-2-A Remote Control
+2- A Remote Control
 
-![remote-control](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWtYSiqOPK0aAa2Ha7-TJrHOSwPGSt-NP1sPLUHClQsWXkKZUwQ)
+![remote-control]<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWtYSiqOPK0aAa2Ha7-TJrHOSwPGSt-NP1sPLUHClQsWXkKZUwQ" width="250">
 
-3-A nodemcu esp8266 wifi module
+3- A nodemcu esp8266 wifi module
 
-![nodemcu](https://www.google.fr/imgres?imgurl=http%3A%2F%2Fwww.microsolution.com.pk%2Fwp-content%2Fuploads%2F2017%2F12%2FNode-MCU.jpg&imgrefurl=http%3A%2F%2Fwww.microsolution.com.pk%2Fproduct%2Fnodemcu-lua-wifi-internet-esp8266-development-board-pakistan%2F&docid=-NaY1FQJy23-ZM&tbnid=8ThcwT-yD5mc0M%3A&vet=10ahUKEwis-pWI3YzbAhXDRhQKHcEDA-QQMwhDKAowCg..i&w=1035&h=1000&hl=en-FR&client=psy-ab&bih=1061&biw=1855&q=esp8266%20wifi%20nodemcu&ved=0ahUKEwis-pWI3YzbAhXDRhQKHcEDA-QQMwhDKAowCg&iact=mrc&uact=8)
+![nodemcu]<img src="http://www.microsolution.com.pk/wp-content/uploads/2017/12/Node-MCU.jpg" width="250">
 
 ### Installing Docker
 First, add the GPG key for the official Docker repository to the system:
