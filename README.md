@@ -45,7 +45,7 @@ In order to test the programs on an Arduino board, you would have to tweak the c
 - To test the code, compile and upload to the Arduino board. Press the corresponding buttons on the remote control and see how it goes...
 
 ### Arduino Wifi Control 
-For controlling our LED over wifi, we first of all need to create a wifi hotspot. This can easily be done with a smartphone. The hotspot credentials in the code should be modified appropriately. 
+For controlling our LED over wifi, we first of all need to create a wifi hotspot. This can easily be done with a smartphone. The hotspot credentials in the [source code](wifi-control.ino) should be modified appropriately. 
 
 ```
 const char* ssid = "Projet-Micro";  // Name of WiFi Network
