@@ -14,7 +14,7 @@ The different projects were carried out with the help of an Arduino development 
 
 1-An Arduino Bluetooth module 
 
-![bluetooth-module]<img src="https://1abxf1rh6g01lhm2riyrt55k-wpengine.netdna-ssl.com/wp-content/uploads/make-images/T11ETWOOA4peEdBY.jpg" width="48">
+![bluetooth-module]<img src="https://1abxf1rh6g01lhm2riyrt55k-wpengine.netdna-ssl.com/wp-content/uploads/make-images/T11ETWOOA4peEdBY.jpg" width="200">
 2-A Remote Control
 
 ![remote-control](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWtYSiqOPK0aAa2Ha7-TJrHOSwPGSt-NP1sPLUHClQsWXkKZUwQ)
