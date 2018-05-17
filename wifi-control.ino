@@ -7,18 +7,18 @@ const char* password = "1234567890";  // Password of WiFi Network
  
 int firstrun = 0;  // Check if system was just powered on
 int buttonpressed = 5;  // To hold which button was pressed on Web Page
-int relayPin=13; 
+int ledPin=13; 
  
  
-WiFiServer server(80);  // Definir le port du serveur web
+WiFiServer server(80);  // Define web server port
  
 void setup() {
   Serial.begin(115200);
   delay(10);
-  pinMode(relayPin,OUTPUT);
-  digitalWrite(relayPin,LOW);
+  pinMode(ledPin,OUTPUT);
+  digitalWrite(ledPin,LOW);
  
-// Connecter au reseau Wifi
+// Connect to wifi network
   Serial.print("Connecting to ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
@@ -58,12 +58,12 @@ void loop() {
  
 // Light Up leds based on the button pressed 
   if (request.indexOf("/ON=1") != -1)  {
-    digitalWrite(relayPin,HIGH);
+    digitalWrite(ledPin,HIGH);
     buttonpressed = LOW;
     firstrun=1;
   }
   if (request.indexOf("/OFF=0") != -1)  {
-   digitalWrite(relayPin,LOW);
+   digitalWrite(ledPin,LOW);
     buttonpressed = HIGH;
     firstrun=1;
   }
