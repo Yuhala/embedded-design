@@ -1,22 +1,22 @@
 /*
-Contrôle à distance via Télécommande
-Par Peterson Yuhala
-Version 1.0
+ *Controlling LED using remote control
+ *By Peterson Yuhala
+ *Version 1.0
  */ 
  
- /*CODES HEXADECIMAL DU TELECOMMANDE
+ /*HEXADECIMAL CODES OF MY REMOTE CONTROL
  MODE: 371A3C86
  OFF: A32AB931
  TIMER: E0984BB6
  SWING: 39D41DC6
  LIGHT: 4EA240AE
- ON/SPEED: 143226DB
- 
+ ON/SPEED: 143226DB 
  */
+ 
 
-#include <IRremote.h> //Ce librairie doit etre téléchargé
+#include <IRremote.h> //Download this library
 const int RECV_PIN = 11;//Broche signal du recepteur IR
-const int relayPin = 3;//Broche du relai 5V
+const int ledPin = 3;//Put your LED here
 IRrecv irrecv(RECV_PIN);//Cree un objet serial sur la broche signal. Cet objet va recevoir les messages serials envoyés
 decode_results results;
 boolean on=true;
@@ -24,8 +24,8 @@ void setup()
 {
   Serial.begin(9600); //
   irrecv.enableIRIn(); // Start the receiver
-  pinMode(relayPin,OUTPUT);
-  digitalWrite(relayPin,LOW);// L'ampoule est eteint au debut
+  pinMode(ledPin,OUTPUT);
+  digitalWrite(ledPin,LOW);// L'ampoule est eteint au debut
 }
 void loop() {
   if (irrecv.decode(&results)) {
@@ -33,10 +33,10 @@ void loop() {
    
     switch (results.value) {
       case 0x10C8E11E:    
-        digitalWrite(relayPin,HIGH);
+        digitalWrite(ledPin,HIGH);
       break;
       case 0x10C831CE:    
-        digitalWrite(relayPin,LOW);
+        digitalWrite(ledPin,LOW);
       break;
       }
    
@@ -44,5 +44,5 @@ void loop() {
       irrecv.resume();     
        }
   // Receive the next value
-  //delay(100); 
+ 
 }
